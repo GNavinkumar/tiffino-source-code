@@ -16,7 +16,7 @@ services:
     build: ./tiffino-backend/eureka-server
     container_name: eureka-service
     ports:
-      - "8761:8761"
+      - "8990:8990"
 
   api-gateway:
     build: ./tiffino-backend/api-gateway
