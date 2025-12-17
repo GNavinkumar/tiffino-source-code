@@ -2,7 +2,6 @@ version: "3.8"
 
 services:
 
-  
   mysql:
     image: mysql:8.0
     container_name: mysql
@@ -15,7 +14,7 @@ services:
     volumes:
       - mysql_data:/var/lib/mysql
 
-    eureka-service:
+  eureka-service:
     build: ./tiffino-backend/eureka-service
     container_name: eureka-service
     ports:
@@ -153,6 +152,4 @@ services:
 
 volumes:
   mysql_data:
-
-
 
